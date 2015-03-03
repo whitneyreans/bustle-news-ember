@@ -1,3 +1,3 @@
 Bustle.Router.map(function() {
-  this.resource('index');
+  this.resource('headlines');
 });
