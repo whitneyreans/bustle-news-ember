@@ -1,25 +1,32 @@
 <h1>HEADLINES</h1>
 
-<br>
+<div class="carouselWrap">
+  <a href="#" {{action 'backPicture'}}><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+  <img {{bind-attr src=displayPicture}} class="newImage">
+  <a href="#" {{action 'forwardPicture'}}><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+</div>
+
+
+<br><br>
 {{#link-to 'manBun'}}
-  <img src="http://www.worn.cz/public/files/092/146198-tumblr_n3811fzz1Z1rssouco1_500.jpg" style="width:304px;height:228px">
+  <img src="img/man-bun.jpg" style="width:304px;height:228px">
   <br>
 <h2>Tyler grows hair out and rocks a solid man-bun. All women very impressed and attracted.</h2>{{/link-to}}
 
 <br>
 {{#link-to 'facialHair'}}
-  <img src="http://entertainment.ie/images_content/JTRO_BEARD1(2).jpg" style="width:304px;height:228px">
+  <img src="img/facial-hair.jpg" style="width:304px;height:228px">
   <br>
 <h2>Bad facial hair in style? Not at all, experts say.</h2>{{/link-to}}
 <br>
 
 {{#link-to 'hip'}}
-  <img src="http://www.hotelchatter.com/files/admin/portlandhood.jpg" style="width:304px;height:228px">
+  <img src="img/hip.jpg" style="width:304px;height:228px">
   <br>
 <h2>BREAKING NEWS: Portland is hip, hipsters finally say.</h2>{{/link-to}}
 <br>
 
 {{#link-to 'granola'}}
-  <img src="http://cgrapechef.com/wp-content/uploads/FruitGranolaYogurtParfait.png" style="width:304px;height:228px">
+  <img src="img/granola.png" style="width:304px;height:228px">
   <br>
 <h2>13 different ways to eat organic granola. Number 7 may surprise you!</h2>{{/link-to}}
