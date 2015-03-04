@@ -7,7 +7,7 @@
       <li>{{#link-to ''}}Kardashians{{/link-to}}</li>
     </ul>
 
-    <div class='socialButtons' {{action 'toggleMenu' on="mouseEnter"}}>
+    <div class='socialButtons' {{action 'toggleMenuOn' on="mouseEnter"}}>
       <img src="img/hamburger.png">
       <img src="img/kitty.gif">
       <img src="img/sushi.gif">
@@ -16,11 +16,11 @@
 
 
   {{#if showMenu}}
-  <div class="socialLinks">
+  <div class="socialLinks" {{action 'toggleMenuOff' on="mouseLeave"}}>
     <ul>
-      <li>Burgerzone</li>
-      <li>Kittygram</li>
-      <li>Sushibook</li>
+      <li><a href="http://burgerzone.com">Burgerzone</a></li>
+      <li><a href="http://kittygram.com">Kittygram</a></li>
+      <li><a href="http://sushibook.com">Sushibook</a></li>
     </ul>
   </div>
   {{/if}}
