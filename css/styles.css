@@ -4,6 +4,17 @@
 }
 
 .carouselWrap {
-  margin-left: auto;
+  margin-left: 40%;
   margin-right: auto;
+  padding-top: 40px;
+}
+
+.socialButtons {
+  float: right;
+  padding-right: 6px;
+}
+
+.socialLinks {
+  float: right;
+  padding-right: 35px;
 }
